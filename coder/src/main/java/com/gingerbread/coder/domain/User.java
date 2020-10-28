@@ -19,6 +19,16 @@ public class User {
     private String firstName;
 
     private String lastName;
+    @Column
+    private Role role;
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
 
     public Long getId() {
         return id;
